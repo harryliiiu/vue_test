@@ -40,10 +40,15 @@
           if(todo.id === id) todo.done = !todo.done
         });
       },
+      // 删除一个todo
       deleteTodo(id){
         this.todos = this.todos.filter(todo =>{
           return todo.id !== id 
         })
+      },
+      // 全选或全不选
+      checkedAll(){
+
       }
     },
 }
